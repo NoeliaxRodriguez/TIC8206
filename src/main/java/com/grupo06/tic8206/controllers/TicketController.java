@@ -80,9 +80,9 @@ public class TicketController {
                 return new ResponseEntity<>(HttpStatus.NOT_FOUND);
             }
             // Buscamos por nombre de usuario y en caso de no encontrar nada, obtenemos null
-            Ticket fromDBUser = tDao.findById(num_referencia).orElse(null);
+            Ticket fromDBTicket = tDao.findById(num_referencia).orElse(null);
 
-            if (fromDBUser != null) {
+            if (fromDBTicket != null) {
                 tDao.save(toUpdate);
                 updatedTicket = toUpdate;
             }
