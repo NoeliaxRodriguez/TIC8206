@@ -1,5 +1,6 @@
 package com.grupo06.tic8206.mysql.entities;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import org.springframework.data.annotation.PersistenceConstructor;
 
 import javax.persistence.*;
@@ -32,6 +33,7 @@ public Event(String categoria, String ciudad, Date fecha, String nombre, String 
 
     private String ciudad;
 
+    @JsonFormat(pattern="yyyy-MM-dd'T'HH:mm:ss")
     private Date fecha;
 
     private String nombre;
