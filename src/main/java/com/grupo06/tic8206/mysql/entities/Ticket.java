@@ -30,16 +30,16 @@ public class Ticket implements Serializable {
 
     private String tipo;
 
- /*   //bi-directional many-to-one association to Evento
+    //bi-directional many-to-one association to Evento
     @ManyToOne
     @JoinColumn(name="evento")
-    private Evento eventoBean;
+    private Event eventoBean;
 
     //bi-directional many-to-one association to Usuario
     @ManyToOne
     @JoinColumn(name="usuario")
-    private Usuario usuarioBean;
-*/
+    private User usuarioBean;
+
     public Ticket() {
     }
 
@@ -59,22 +59,20 @@ public class Ticket implements Serializable {
         this.tipo = tipo;
     }
 
- /*   public Evento getEventoBean() {
+    public Event getEventoBean() {
         return this.eventoBean;
     }
 
-    public void setEventoBean(Evento eventoBean) {
+    public void setEventoBean(Event eventoBean) {
         this.eventoBean = eventoBean;
     }
 
-    public Usuario getUsuarioBean() {
+    public User getUsuarioBean() {
         return this.usuarioBean;
     }
 
-    public void setUsuarioBean(Usuario usuarioBean) {
+    public void setUsuarioBean(User usuarioBean) {
         this.usuarioBean = usuarioBean;
     }
-
-  */
 
 }
